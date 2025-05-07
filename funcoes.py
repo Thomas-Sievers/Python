@@ -56,7 +56,7 @@ def soma_total(*numeros):
     Esta função aceita um núnero arbitrário de argumentos e retorna a soma de todos.
     '''
 
-    return sum(numero)
+    return sum(numeros)
 
 print(soma_total(1,2,3))
 print(soma_total(10,20,30, 40))
@@ -72,3 +72,32 @@ def exibir_informacoes(**informacoes):
 
 exibir_informacoes(nome = "Ana", idade = 25, cidade = "São Paulo")
 exibir_informacoes(produto = "Notebook", preco = 2500, marca = "Dell")
+
+expression = "5 + 5 * 3"
+
+resultado = eval(expression)
+print(resultado)
+
+x = 10
+y = 5
+
+expressao = 'print(x * y + 2)'
+
+eval(expressao, {}, {'x': x, 'y': y})
+
+def minha_funcao():
+    global x
+    x = 3
+
+minha_funcao()
+print(x)
+
+code_str = '''
+result = []
+for i in range (10):
+    if i % 2 == 0:
+        result.append(i)
+print(result)
+'''
+
+exec(code_str)
