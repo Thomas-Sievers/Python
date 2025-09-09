@@ -1,0 +1,4 @@
+Thomas, 6
+Matheus, 7
+Renato, 3
+Nico, 5
